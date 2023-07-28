@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Az Image Converter Documentation</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Az Image Converter Documentation</h1>
+        <p>
+            Welcome to the Az Image Converter documentation. This page provides information on how to use the Image Converter package for converting images to different formats.
+        </p>
+
+        <div id="accordion">
+            <!-- JPG to PNG Converter -->
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            JPG to PNG Converter
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>
+                            The JPG to PNG Converter allows you to convert JPG images to PNG format.
+                        </p>
+                        <pre><code>from image_converter import JPGtoPNGConverter
+
+input_file_path = "input_image.jpg"
+output_file_path = "output_image.png"
+
+converter = JPGtoPNGConverter(input_file_path, output_file_path)
+converter.convert()</code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Converters -->
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            PNG TO JPG Converter
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>
+                            The PNG to JPG Converter allows you to convert PNG images to JPG format.
+                        </p>
+                        <pre><code>from image_converter import PNGtoJPGConverter
+
+input_file_path = "input_image.png"
+output_file_path = "output_image.jpg"
+
+converter = JPGtoPNGConverter(input_file_path, output_file_path)
+converter.convert()</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
